@@ -1,15 +1,15 @@
 import os
 
 class Config(object):
-  API_ID = int(os.environ.get("API_ID", ""))
-  API_HASH = os.environ.get("API_HASH", "")
-  BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-  BOT_USERNAME = os.environ.get("BOT_USERNAME", "")
+  API_ID = int(os.environ.get("API_ID", "27924674"))
+  API_HASH = os.environ.get("API_HASH", "9a2049b23f1e6de4cffac8c8e2f71830")
+  BOT_TOKEN = os.environ.get("BOT_TOKEN", "7488881679:AAHGG_tT7doYjU1M9BqcUSYnUaX_P4kox68")
+  BOT_USERNAME = os.environ.get("BOT_USERNAME", "Making283bot")
   DB_CHANNEL = int(os.environ.get("DB_CHANNEL", ""))
-  SHORTLINK_URL = os.environ.get('SHORTLINK_URL', "MoneyKamalo.com")
+  SHORTLINK_URL = os.environ.get('SHORTLINK_URL', "publicearn.com")
   SHORTLINK_API = os.environ.get('SHORTLINK_API', "0eefb93e1e3ce9470a7033115ceb1bad13a9d674")
   BOT_OWNER = int(os.environ.get("BOT_OWNER", ""))
-  DATABASE_URL = os.environ.get("DATABASE_URL", "")
+  DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://Sabuji8902:Sabuji8902@freee.aeyqj.mongodb.net/?retryWrites=true&w=majority&appName=Freee")
   UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
   LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
   BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
