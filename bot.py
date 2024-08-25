@@ -70,7 +70,7 @@ async def start(bot: Client, cmd: Message):
         await add_user_to_database(bot, cmd)
         await cmd.reply_text(
             Config.HOME_TEXT.format(cmd.from_user.first_name, cmd.from_user.id),
-            disable_web_page_preview=True,
+            disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -314,7 +314,7 @@ async def button(bot: Client, cmd: CallbackQuery):
     if "aboutbot" in cb_data:
         await cmd.message.edit(
             Config.ABOUT_BOT_TEXT,
-            disable_web_page_preview=True,
+            disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -332,7 +332,7 @@ async def button(bot: Client, cmd: CallbackQuery):
     elif "aboutdevs" in cb_data:
         await cmd.message.edit(
             Config.ABOUT_DEV_TEXT,
-            disable_web_page_preview=True,
+            disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -350,7 +350,7 @@ async def button(bot: Client, cmd: CallbackQuery):
     elif "gotohome" in cb_data:
         await cmd.message.edit(
             Config.HOME_TEXT.format(cmd.message.chat.first_name, cmd.message.chat.id),
-            disable_web_page_preview=True,
+            disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -407,7 +407,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
         await cmd.message.edit(
             text=Config.HOME_TEXT.format(cmd.message.chat.first_name, cmd.message.chat.id),
-            disable_web_page_preview=True,
+            disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
