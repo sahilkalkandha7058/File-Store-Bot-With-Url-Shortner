@@ -310,7 +310,7 @@ async def button(bot: Client, cmd: CallbackQuery):
     if "aboutbot" in cb_data:
         await cmd.message.edit(
             Config.ABOUT_BOT_TEXT,
-            disable_web_page_preview=False,
+            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                     
@@ -322,7 +322,7 @@ async def button(bot: Client, cmd: CallbackQuery):
     elif "aboutdevs" in cb_data:
         await cmd.message.edit(
             Config.ABOUT_DEV_TEXT,
-            disable_web_page_preview=False,
+            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                     
@@ -354,7 +354,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 if user.status == "kicked":
                     await cmd.message.edit(
                         text="Sorry Sir, You are Banned to use me. Contact my [𝙎𝙪𝙥𝙥𝙤𝙧𝙩 𝙂𝙧𝙤𝙪𝙥]().",
-                        disable_web_page_preview=True
+                        disable_web_page_preview=False
                     )
                     return
             except UserNotParticipant:
