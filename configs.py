@@ -10,7 +10,7 @@ class Config(object):
   SHORTLINK_API = os.environ.get('SHORTLINK_API', "e999f491398065f8f7c3ede84d272df5c4b82e52")
   BOT_OWNER = int(os.environ.get("BOT_OWNER", "5000247903"))
   DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://Sabuji8902:Sabuji8902@freee.aeyqj.mongodb.net/?retryWrites=true&w=majority&appName=Freee")
-  UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "https://t.me/+cLVkXFy6E_ViM2Q9")
+  UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1002182171604")
   LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002165310608"))
   BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
   FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", True))
