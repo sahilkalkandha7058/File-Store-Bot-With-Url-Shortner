@@ -3,8 +3,8 @@ import os
 class Config(object):
   API_ID = int(os.environ.get("API_ID", "27924674"))
   API_HASH = os.environ.get("API_HASH", "9a2049b23f1e6de4cffac8c8e2f71830")
-  BOT_TOKEN = os.environ.get("BOT_TOKEN", "7343393783:AAFzU0V8XwE_xT23GR6Y2v8aQt74FQ2qPyA")
-  BOT_USERNAME = os.environ.get("BOT_USERNAME", "Files2bi2bot")
+  BOT_TOKEN = os.environ.get("BOT_TOKEN", "7493970655:AAF647jaKC5GZOiIm9cVkd4OjEkW7Bzk7G8")
+  BOT_USERNAME = os.environ.get("BOT_USERNAME", "@Luckyfan37bot")
   DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1002243887646"))
   SHORTLINK_URL = os.environ.get('SHORTLINK_URL', "publicearn.com")
   SHORTLINK_API = os.environ.get('SHORTLINK_API', "e999f491398065f8f7c3ede84d272df5c4b82e52")
